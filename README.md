@@ -10,7 +10,6 @@ Public IP Address: 20.255.57.88
 
 ## Project Overview
 This project demonstrates the deployment of a cloud-hosted website using Microsoft Azure Virtual Machines.
-## Script
 
 ### Purpose
 This script displays system information including hostname, date, memory usage and disk usage.
