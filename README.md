@@ -14,7 +14,6 @@ This project demonstrates the deployment of a cloud-hosted website using Microso
 ### Purpose
 This script displays system information including hostname, date, memory usage and disk usage.
 
-### Code
 
 ```bash
 #!/bin/bash
