@@ -2,7 +2,8 @@
 
 ## Student Information
 Name: Noyon Chandra Paul
-
+Student Name: Noyon Chandra Paul
+Student Number: 35916323
 ## Website Information
 Domain Name: noyonchandrapaul.online
 Public IP Address: 20.255.57.88
