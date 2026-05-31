@@ -70,7 +70,7 @@ To provide a professional online presence, a custom domain name was purchased.
 | ------------------- | ----------------------- |
 | Registrar           | Namecheap               |
 | Domain              | noyonchandrapaul.online |
-| Cost                | USD $1.65               |
+| Cost                | AUD $1.65               |
 | Registration Period | 1 Year                  |
 
 The domain was purchased from Namecheap because of its low cost and simple DNS management interface.
