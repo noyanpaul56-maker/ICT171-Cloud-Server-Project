@@ -165,7 +165,7 @@ Through this project I gained practical experience in:
 * GitHub Documentation
 
 This project demonstrates the deployment and management of a real-world cloud-hosted web server using Infrastructure as a Service technologies.
-Final Architecture Diagram 
+#Final Architecture Diagram 
 User Browser
       ↓
 Domain (Namecheap)
