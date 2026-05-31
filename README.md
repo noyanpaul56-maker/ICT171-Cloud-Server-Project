@@ -2,7 +2,7 @@
 
 ## Cloud Platform Selection
 
-For this project, Microsoft Azure was selected as the cloud service provider. Azure was chosen because it provides students with free cloud credits through the Azure for Students program, allowing practical experience with Infrastructure as a Service (IaaS) technologies without additional hosting costs.
+For this project, Microsoft Azure was selected as the cloud service provider. Azure was chosen because  students  credits through the Azure for Students program, allowing practical experience with Infrastructure as a Service (IaaS) technologies without additional hosting costs.
 
 The project was implemented using Microsoft Azure Virtual Machines running Ubuntu Linux Server.
 
