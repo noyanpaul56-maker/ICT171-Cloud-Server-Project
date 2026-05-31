@@ -165,4 +165,17 @@ Through this project I gained practical experience in:
 * GitHub Documentation
 
 This project demonstrates the deployment and management of a real-world cloud-hosted web server using Infrastructure as a Service technologies.
-
+Final Architecture Diagram 
+User Browser
+      ↓
+Domain (Namecheap)
+      ↓
+DNS
+      ↓
+Azure VM (Ubuntu)
+      ↓
+Nginx Web Server
+      ↓
+Portfolio Website
+      ↓
+SSL (Let's Encrypt)
