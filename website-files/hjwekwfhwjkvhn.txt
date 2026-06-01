@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noyon Chandra Paul | Cyber Security Portfolio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial, sans-serif;
+background:#031326;
+color:white;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:#02101f;
+padding:20px 50px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+border-bottom:1px solid #0a4c8f;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#38bdf8;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+color:#38bdf8;
+}
+
+.hero{
+padding-top:120px;
+padding-bottom:60px;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:50px;
+flex-wrap:wrap;
+background:linear-gradient(to right,#031326,#041f3b);
+}
+
+.profile{
+width:220px;
+height:220px;
+border-radius:50%;
+border:6px solid #38bdf8;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:80px;
+background:#071d35;
+box-shadow:0 0 30px #38bdf8;
+}
+
+.hero-text h1{
+font-size:55px;
+color:#38bdf8;
+margin-bottom:15px;
+}
+
+.hero-text h2{
+font-weight:normal;
+margin-bottom:15px;
+}
+
+.hero-text p{
+font-size:20px;
+margin-top:10px;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+margin-top:30px;
+}
+
+.card{
+background:#08213d;
+padding:30px;
+border-radius:15px;
+box-shadow:0 0 15px rgba(56,189,248,0.15);
+}
+
+.card h2{
+color:#38bdf8;
+margin-bottom:20px;
+}
+
+.card ul{
+padding-left:20px;
+}
+
+.card li{
+margin-bottom:12px;
+}
+
+.contact{
+margin-top:30px;
+background:#08213d;
+padding:30px;
+border-radius:15px;
+}
+
+.contact h2{
+color:#38bdf8;
+margin-bottom:20px;
+}
+
+.contact p{
+margin-bottom:15px;
+}
+
+.contact a{
+color:#38bdf8;
+text-decoration:none;
+}
+
+footer{
+margin-top:50px;
+text-align:center;
+padding:25px;
+border-top:1px solid #0a4c8f;
+color:#cbd5e1;
+}
+
+@media(max-width:768px){
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.hero{
+text-align:center;
+}
+
+.hero-text h1{
+font-size:40px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">🛡 Noyon Chandra Paul</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+
+<div class="profile">
+🛡
+</div>
+
+<div class="hero-text">
+<h1>Noyon Chandra Paul</h1>
+<h2>Cyber Security & Forensics Student</h2>
+<p>Murdoch University, Australia</p>
+<p><strong>Student ID:</strong> 35916323</p>
+</div>
+
+</section>
+
+<div class="container">
+
+<div class="grid">
+
+<section id="about" class="card">
+<h2>About Me</h2>
+
+<p>
+Hello! My name is Noyon Chandra Paul.
+I am currently studying Information Technology
+with a major in Cyber Security and Forensics
+at Murdoch University.
+</p>
+
+<br>
+
+<p>
+I am passionate about cloud computing,
+cyber security, networking,
+Linux administration and modern technologies.
+</p>
+
+</section>
+
+<section id="education" class="card">
+
+<h2>Education</h2>
+
+<ul>
+<li>Bachelor of Information Technology (Cyber Security & Forensics) - Murdoch University</li>
+
+<li>Bachelor of Science in Physics - National University, Bangladesh</li>
+
+</ul>
+
+</section>
+
+<section id="skills" class="card">
+
+<h2>Technical Skills</h2>
+
+<ul>
+<li>Microsoft Azure</li>
+<li>Ubuntu Linux</li>
+<li>Nginx Web Server</li>
+<li>Git & GitHub</li>
+<li>Networking Fundamentals</li>
+<li>DNS Configuration</li>
+<li>HTML & CSS</li>
+<li>Cyber Security Fundamentals</li>
+</ul>
+
+</section>
+
+<section id="projects" class="card">
+
+<h2>Projects</h2>
+
+<ul>
+<li>ICT171 Cloud Server Project</li>
+<li>Azure Virtual Machine</li>
+<li>Ubuntu Linux Server</li>
+<li>Custom Domain Setup</li>
+<li>HTTPS Security</li>
+<li>Nginx Web Hosting</li>
+</ul>
+
+</section>
+
+</div>
+
+<section id="contact" class="contact">
+
+<h2>Contact Information</h2>
+
+<p>Email:
+<a href="mailto:noyanpaul56@gmail.com">
+noyanpaul56@gmail.com
+</a>
+</p>
+
+<p>GitHub:
+<a href="https://github.com/noyanpaul56-maker" target="_blank">
+github.com/noyanpaul56-maker
+</a>
+</p>
+
+<p>Website:
+<a href="https://noyonchandrapaul.online" target="_blank">
+noyonchandrapaul.online
+</a>
+</p>
+
+</section>
+
+</div>
+
