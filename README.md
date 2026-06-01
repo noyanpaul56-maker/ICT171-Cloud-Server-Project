@@ -28,7 +28,7 @@ The completed website is publicly accessible and hosted on an Azure Virtual Mach
 
 🔗 Website
 
-https://noyonchandrapaul.online/
+https://https://noyonchandrapaul.online
 
 ---
 ## Video Explainer
