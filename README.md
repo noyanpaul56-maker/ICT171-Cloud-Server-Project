@@ -1,250 +1,290 @@
-# Cloud Server Project Implementation
+# ICT171 Cloud Server Project
 
-## Public Server Information
+## Student Information
 
-### Live Website
-
-🌐 Website: https://noyonchandrapaul.online
-
-### GitHub Repository
-
-📂 Repository: https://github.com/noyanpaul56-maker/ICT171-Cloud-Server-Project
-
-### Server Information
-
-| Item              | Value                   |
-| ----------------- | ----------------------- |
-| Cloud Provider    | Microsoft Azure         |
-| Operating System  | Ubuntu Server 24.04 LTS |
-| Web Server        | Nginx                   |
-| Domain Name       | noyonchandrapaul.online |
-| Public IP Address | 20.255.57.88            |
-| Security          | SSL/TLS (Let's Encrypt) |
+| Item | Details |
+|--------|--------|
+| Name | Noyon Chandra Paul |
+| Student ID | 35916323 |
+| Unit | ICT171 Cloud Server Project |
+| University | Murdoch University |
+| Cloud Provider | Microsoft Azure |
+| Operating System | Ubuntu Server 24.04 LTS |
+| Web Server | Nginx |
 
 ---
 
-## Cloud Platform Selection
+# Project Overview
 
-For this project, Microsoft Azure was selected as the cloud service provider. Azure was chosen because students receive credits through the Azure for Students program, allowing practical experience with Infrastructure as a Service (IaaS) technologies without additional hosting costs.
+This project demonstrates the deployment and management of a cloud-hosted web server using Microsoft Azure Infrastructure as a Service (IaaS).
 
-The project was implemented using Microsoft Azure Virtual Machines running Ubuntu Linux Server.
+The objective was to create a Linux virtual machine, configure a web server, deploy a personal portfolio website, connect a custom domain name, and secure the website using SSL/TLS encryption.
 
----
-
-## Azure Account Setup
-
-I registered for Microsoft Azure using my Murdoch University student account and activated the Azure for Students subscription.
-
-Benefits included:
-
-* Free Azure student credits
-* Access to Virtual Machines
-* Networking resources
-* Public IP addresses
-* Cloud storage and management tools
-
-This subscription allowed me to deploy and manage a cloud server entirely through the Azure Portal.
+The completed website is publicly accessible and hosted on an Azure Virtual Machine.
 
 ---
 
-## Virtual Machine Deployment
+# Live Website
 
-A new Ubuntu Linux Virtual Machine was created in Microsoft Azure.
-
-### Configuration Details
-
-| Setting           | Value                              |
-| ----------------- | ---------------------------------- |
-| Cloud Provider    | Microsoft Azure                    |
-| Subscription Type | Azure for Students                 |
-| Region            | East Asia                          |
-| Operating System  | Ubuntu Server 24.04 LTS            |
-| Deployment Model  | Infrastructure as a Service (IaaS) |
-| Authentication    | SSH                                |
-| Public IP         | 20.255.57.88                       |
-
-### Azure Virtual Machine
-
-![Azure VM](screenshots/01-azure-vm.png)
-
-**Figure 1:** Azure Virtual Machine running in Microsoft Azure.
-
----
-
-## Server Access
-
-The server was accessed remotely using Secure Shell (SSH).
-
-Example connection:
-
-```bash
-az ssh vm --resource-group noyon_group_04171830 --vm-name noyon
-```
-
-### SSH Access
-
-![SSH Connection](screenshots/02-ssh-connection.png)
-
-**Figure 2:** Successful SSH connection to the Ubuntu Linux server.
-
----
-
-## Domain Name Registration
-
-To provide a professional online presence, a custom domain name was purchased.
-
-### Domain Information
-
-| Item                | Value                   |
-| ------------------- | ----------------------- |
-| Registrar           | Namecheap               |
-| Domain              | noyonchandrapaul.online |
-| Cost                | AUD $1.65               |
-| Registration Period | 1 Year                  |
-
-The domain was purchased from Namecheap because of its low cost and simple DNS management interface.
-
----
-
-## DNS Configuration
-
-After purchasing the domain, DNS records were configured through the Namecheap DNS management console.
-
-### DNS Record
-
-| Record Type | Host | Value        |
-| ----------- | ---- | ------------ |
-| A Record    | @    | 20.255.57.88 |
-
-### DNS Propagation Verification
-
-![DNS Propagation](screenshots/05-dns-propagation.png)
-
-**Figure 3:** DNS Checker confirms that the domain correctly resolves to the Azure VM public IP address.
-
----
-
-## Web Server Installation
-
-Nginx was installed as the web server software.
-
-```bash
-sudo apt update
-sudo apt install nginx -y
-```
-
-### Nginx Service Status
-
-![Nginx Status](screenshots/03-nginx-status.png)
-
-**Figure 4:** Nginx service running successfully.
-
-### Nginx Installation Verification
-
-![Nginx Installation](screenshots/04-nginx-installation.png)
-
-**Figure 5:** Package installation history confirming successful Nginx installation.
-
----
-
-## Website Deployment
-
-The portfolio website files were uploaded to:
-
-```bash
-/var/www/html
-```
-
-The website was developed using:
-
-* HTML5
-* CSS3
-* Responsive Design
-
-The website contains:
-
-* Personal Profile
-* Education Information
-* Technical Skills
-* Cloud Server Project Details
-* Contact Information
-
----
-
-## SSL/TLS Configuration
-
-HTTPS was enabled to secure communication between visitors and the website.
-
-### SSL Certificate Verification
-
-![SSL Certificate](screenshots/06-ssl-certificate.png)
-
-**Figure 6:** Let's Encrypt SSL certificate successfully installed and active.
-
-Secure website URL:
+🔗 Website:
 
 https://noyonchandrapaul.online
 
 ---
 
-## Final Website
+# GitHub Repository
 
-![Portfolio Website](screenshots/07-final-website.png)
-
-**Figure 7:** Final deployed cybersecurity portfolio website accessible through the custom domain.
-
----
-
-## GitHub Repository
-
-GitHub was used to store source code, screenshots and project documentation.
-
-![GitHub Repository](screenshots/08-github-repository.png)
-
-**Figure 8:** GitHub repository containing project files and documentation.
-
-Repository:
+🔗 Repository:
 
 https://github.com/noyanpaul56-maker/ICT171-Cloud-Server-Project
 
 ---
 
-## Skills Demonstrated
+# Cloud Platform Selection
 
-Through this project I gained practical experience in:
+Microsoft Azure was selected as the cloud provider for this project.
 
-* Microsoft Azure Cloud Computing
-* Linux Server Administration
-* SSH Remote Management
-* DNS Configuration
-* Domain Management
-* Nginx Web Server Administration
-* SSL/TLS Security
-* Website Hosting
-* GitHub Documentation
+Reasons for selection:
+
+- Access through Azure for Students subscription
+- Industry-standard cloud platform
+- Reliable Infrastructure as a Service (IaaS)
+- Easy deployment and management of Linux virtual machines
+- Practical experience with enterprise cloud technologies
 
 ---
 
-## Final Architecture Diagram
+# Server Configuration
 
-```text
-User Browser
-      ↓
-Domain (Namecheap)
-      ↓
-DNS
-      ↓
-Azure VM (Ubuntu)
-      ↓
-Nginx Web Server
-      ↓
-Portfolio Website
-      ↓
-SSL (Let's Encrypt)
+| Component | Configuration |
+|------------|---------------|
+| Cloud Provider | Microsoft Azure |
+| Virtual Machine | Azure VM |
+| Operating System | Ubuntu Server 24.04 LTS |
+| Web Server | Nginx |
+| Domain Name | noyonchandrapaul.online |
+| SSL Certificate | Let's Encrypt |
+| Access Method | SSH |
+
+---
+
+# Project Implementation
+
+## Step 1 – Azure Virtual Machine Creation
+
+An Ubuntu Linux virtual machine was created in Microsoft Azure.
+
+Features configured:
+
+- Public IP Address
+- Virtual Network
+- Resource Group
+- SSH Access
+- Ubuntu Server 24.04
+
+### Evidence
+
+![Azure Virtual Machine](screenshots/1.png)
+
+---
+
+## Step 2 – SSH Connection
+
+The virtual machine was accessed securely using SSH through Azure Cloud Shell.
+
+Commands used:
+
+```bash
+hostname
+pwd
 ```
 
+### Evidence
+
+![SSH Access](screenshots/3.png)
+
 ---
 
-## Conclusion
+## Step 3 – Nginx Installation
 
-This project demonstrates the deployment and management of a real-world cloud-hosted web server using Infrastructure as a Service technologies.
+Nginx was installed on the Ubuntu server and configured as the web server hosting the portfolio website.
+
+Commands used:
+
+```bash
+sudo apt update
+sudo apt install nginx
+```
+
+### Evidence
+
+![Nginx Status](screenshots/2.png)
+
+---
+
+## Step 4 – Verification of Nginx Installation
+
+The installation history and active service status were verified.
+
+Command used:
+
+```bash
+grep nginx /var/log/apt/history.log
+```
+
+### Evidence
+
+![Nginx Installation Verification](screenshots/04.png)
+
+---
+
+## Step 5 – Website Deployment
+
+A personal portfolio website was created using HTML and CSS and deployed to the Nginx web root directory.
+
+Directory used:
+
+```bash
+/var/www/html
+```
+
+### Evidence
+
+![Website Deployment](screenshots/07.png)
+
+---
+
+## Step 6 – Domain Name Configuration
+
+A custom domain name was purchased and configured to point to the Azure Virtual Machine public IP address.
+
+Domain:
+
+```text
+noyonchandrapaul.online
+```
+
+DNS records were updated to direct traffic to the server.
+
+---
+
+## Step 7 – DNS Verification
+
+DNS propagation was verified using DNSChecker.
+
+This confirmed that the domain correctly resolved to the Azure server's public IP address.
+
+### Evidence
+
+![DNS Propagation](screenshots/05.png)
+
+---
+
+## Step 8 – SSL Certificate Configuration
+
+Let's Encrypt SSL certificates were installed using Certbot.
+
+Command used:
+
+```bash
+sudo certbot certificates
+```
+
+The website was secured using HTTPS encryption.
+
+### Evidence
+
+![SSL Certificate](screenshots/06.png)
+
+---
+
+# Website Features
+
+The deployed website contains:
+
+- Personal profile section
+- Education information
+- Skills section
+- Projects section
+- Contact information
+- Responsive navigation menu
+- HTTPS secure connection
+
+### Evidence
+
+![Live Website](screenshots/07.png)
+
+---
+
+# Security Measures Implemented
+
+The following security controls were implemented:
+
+- SSH secure remote access
+- Linux user authentication
+- HTTPS encryption
+- SSL/TLS certificates
+- Nginx web server security
+- DNS validation
+- Cloud infrastructure security through Azure
+
+---
+
+# Networking Components
+
+The deployment includes:
+
+- Azure Virtual Network
+- Public IP Address
+- Domain Name System (DNS)
+- HTTPS Encryption
+- Internet Gateway Access
+
+---
+
+# Skills Demonstrated
+
+This project demonstrates practical knowledge of:
+
+- Cloud Computing
+- Infrastructure as a Service (IaaS)
+- Microsoft Azure
+- Linux Administration
+- SSH Remote Access
+- Nginx Web Server Configuration
+- DNS Management
+- SSL/TLS Configuration
+- Website Hosting
+- GitHub Version Control
+
+---
+
+# Conclusion
+
+This project successfully demonstrates the deployment of a secure cloud-hosted website using Microsoft Azure.
+
+The implementation involved creating and managing an Ubuntu virtual machine, configuring an Nginx web server, connecting a custom domain name, implementing HTTPS security through SSL certificates, and deploying a functional portfolio website.
+
+The project provided practical experience in cloud infrastructure management, Linux administration, web server configuration, networking, and cybersecurity principles.
+
+---
+
+# References
+
+Microsoft Azure Documentation:
+https://learn.microsoft.com/azure
+
+Ubuntu Documentation:
+https://help.ubuntu.com
+
+Nginx Documentation:
+https://nginx.org/en/docs
+
+Let's Encrypt:
+https://letsencrypt.org
+
+DNS Checker:
+https://dnschecker.org
+
+GitHub:
+https://github.com
