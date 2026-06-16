@@ -38,7 +38,7 @@ https://www.noyonchandrapaul.online
 
 🎥 YouTube Video:
 
-https://youtu.be/p8naOS45dGY 
+https://youtu.be/p8naOS45dGY
 
 ---
 # GitHub Repository
